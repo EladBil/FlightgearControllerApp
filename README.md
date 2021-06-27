@@ -10,6 +10,7 @@ Hi welcome to our FlightGear Controller Android app.
 <ins>Link to Youtube:</ins><br/>
   https://youtu.be/IaizChBFdbc<br/>
 <br/>
+NOTICE: You can see the Class Diagram .pdf file in our project files.<br/>
 <ins>Guide to user:</ins><br/>
   As the app isn't yet on the android app store you will need to have Android Studio in order to download the app.<br/>
   1. Download Android Studio: <br/>
