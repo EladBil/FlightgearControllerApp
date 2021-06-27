@@ -8,7 +8,7 @@ Hi welcome to our FlightGear Controller Android app.
   need for it to move.
 
 <ins>Link to Youtube:</ins><br/>
-  !!!"Add link here"!!!<br/>
+  https://youtu.be/IaizChBFdbc<br/>
 <br/>
 <ins>Guide to user:</ins><br/>
   As the app isn't yet on the android app store you will need to have Android Studio in order to download the app.<br/>
