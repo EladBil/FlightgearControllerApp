@@ -10,7 +10,7 @@ Hi welcome to our FlightGear Controller Android app.
 <ins>Link to Youtube:</ins><br/>
   !!!"Add link here"!!!<br/>
 <br/>
-<ins>Guid to user:</ins><br/>
+<ins>Guide to user:</ins><br/>
   As the app isn't yet on the android app store you will need to have Android Studio in order to download the app.<br/>
   1. Download Android Studio: <br/>
     Link: https://developer.android.com/studio<br/>
@@ -30,3 +30,13 @@ Hi welcome to our FlightGear Controller Android app.
   10. Now you can run your app and enter your pc IP and the port you selected.<br/>
     Notice: the IP you enter in app can be found by (On Windows only, other OS's have different ways.) running ipconfig on CMD.<br/>
   11. Have Fun!<br/>
+<br/>
+<ins>Guide to developer:</ins><br/>
+  1. Do the same steps in ther user guide in order to run the app, and get ahold of the files.<br/>
+  2. By opening Android Studio and going to FG_Controller_App you can see all the Android files you need.<br/>
+  TIPS for Developer:<br/>
+    A. We strongly recommend load the app to the phone and run the app from there instead of the Emulator Android Studio offers.<br/>
+      It is better for performence of your computer as FlightGear and Android Studio already heavy resources apps.<br/>
+    B. We used Java as our programming language but Android Studio have the option to convert the project to Kotlin, if you wish to<br/> 
+      
+  
