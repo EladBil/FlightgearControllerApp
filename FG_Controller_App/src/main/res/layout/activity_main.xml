@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/runway"
+        tools:context=".views.MainActivity">
+
+
+        <com.example.flightgearcontrollerapp.views.Joystick
+            android:id="@+id/joystickView"
+            android:layout_width="341dp"
+            android:layout_height="326dp"
+            app:layout_constraintBottom_toBottomOf="@+id/Rudder_TextView"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/frameLayout"
+            app:layout_constraintTop_toBottomOf="@+id/Connect_Button" />
+
+
+        <EditText
+            android:id="@+id/IP_Address"
+            android:layout_width="310dp"
+            android:layout_height="50dp"
+            android:ems="10"
+            android:hint="@string/enter_ip"
+            android:inputType="textPersonName"
+            android:textColorHint="#48494B"
+            android:backgroundTint="#48494B"
+            android:textSize="20sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            tools:ignore="MissingConstraints"
+            tools:layout_editor_absoluteY="27dp"
+            android:autofillHints="IP" />
+
+        <EditText
+            android:id="@+id/Server_Port"
+            android:layout_width="310dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="12dp"
+            android:autofillHints="PORT"
+            android:ems="10"
+            android:hint="@string/enter_port"
+            android:inputType="textPersonName"
+            android:textColorHint="#48494B"
+            android:backgroundTint="#48494B"
+            android:textSize="20sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.495"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/IP_Address"
+            tools:ignore="MissingConstraints"
+            />
+
+        <ImageButton
+            android:id="@+id/Connect_Button"
+            android:layout_width="212dp"
+            android:layout_height="55dp"
+            android:layout_marginTop="24dp"
+            android:background="@null"
+            android:src="@drawable/plane_icon_2"
+            android:scaleType="centerCrop"
+            android:clickable="true"
+            android:onClick="onConnectClick"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/Server_Port"
+            tools:ignore="MissingConstraints"
+            android:focusable="true"
+            android:contentDescription="@string/todo" />
+
+        <TextView
+            android:id="@+id/Connect_TextView"
+            android:layout_width="143dp"
+            android:layout_height="34dp"
+            android:clickable="false"
+            android:text="@string/connect"
+            android:textAlignment="center"
+            android:textSize="25sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="@+id/Connect_Button"
+            app:layout_constraintEnd_toEndOf="@+id/Connect_Button"
+            app:layout_constraintStart_toStartOf="@+id/Connect_Button" />
+
+
+        <TextView
+            android:id="@+id/Throttle_TextView"
+            android:layout_width="118dp"
+            android:layout_height="24dp"
+            android:clickable="false"
+            android:text="@string/throttle"
+            android:textAlignment="center"
+            android:textColor="#48494B"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toTopOf="@+id/frameLayout"
+            app:layout_constraintEnd_toEndOf="@+id/frameLayout"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/Connect_TextView" />
+
+        <TextView
+            android:id="@+id/Rudder_TextView"
+            android:layout_width="71dp"
+            android:layout_height="39dp"
+            android:clickable="false"
+            android:text="@string/rudder"
+            android:textAlignment="center"
+            android:textColor="#48494B"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toTopOf="@+id/rudder_bar"
+            app:layout_constraintEnd_toEndOf="@+id/rudder_bar"
+            app:layout_constraintStart_toStartOf="@+id/rudder_bar"
+            app:layout_constraintTop_toBottomOf="@+id/frameLayout" />
+
+        <SeekBar
+            android:id="@+id/rudder_bar"
+            android:layout_width="380dp"
+            android:layout_height="56dp"
+            android:layout_marginBottom="16dp"
+            android:max="100"
+            android:min="0"
+            android:progress="50"
+            android:progressBackgroundTint="@color/black"
+            android:progressTint="#F3A116"
+            android:thumbTint="#D17506"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.483"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <FrameLayout
+            android:id="@+id/frameLayout"
+            android:layout_width="52dp"
+            android:layout_height="438dp"
+            android:layout_marginStart="4dp"
+            app:layout_constraintBottom_toTopOf="@+id/rudder_bar"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/Connect_Button">
+
+            <SeekBar
+                android:id="@+id/throttle_bar"
+                android:layout_width="400dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:progress="50"
+                android:max="100"
+                android:min="0"
+                android:progressBackgroundTint="@color/black"
+                android:progressTint="#F31616"
+                android:rotation="270"
+                android:thumbTint="#9F0A0A" />
+        </FrameLayout>
+
+    </android.support.constraint.ConstraintLayout>
+</layout>

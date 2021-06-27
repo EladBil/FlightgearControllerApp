@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">FlightgearControllerApp</string>
+    <string name="enter_ip">IP</string>
+    <string name="enter_port">Server port</string>
+    <string name="todo"></string>
+    <string name="connect">Connect</string>
+    <string name="rudder">Rudder</string>
+    <string name="throttle">Throttle</string>
+</resources>
